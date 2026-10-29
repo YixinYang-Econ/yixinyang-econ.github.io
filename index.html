@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yixin Yang</title>
+  <meta name="description" content="Yixin Yang, PhD candidate in Agricultural and Resource Economics at the University of Maryland.">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", Arial, sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    a {
+      color: #1a4f8b;
+    }
+
+    /* Top menu */
+    nav {
+      position: sticky;
+      top: 0;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding: 14px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 10;
+    }
+
+    nav .name {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-weight: 600;
+      font-size: 24px;
+      text-decoration: none;
+      color: #222;
+    }
+
+    nav .links a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #444;
+      font-size: 13px;
+    }
+
+    nav .links a:hover {
+      color: #1a4f8b;
+    }
+
+    /* First screen: photo and bio */
+    .intro {
+      min-height: calc(100vh - 60px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 56px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      box-sizing: border-box;
+    }
+
+    .intro img {
+      width: 230px;
+      height: auto;
+      border-radius: 8px;
+      background: #e8e8e8;
+      flex-shrink: 0;
+    }
+
+    .intro h1 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 21px;
+      margin: 0 0 16px 0;
+    }
+
+    .intro .market {
+      font-weight: 600;
+    }
+
+    .intro .links-row a {
+      margin: 0 6px;
+    }
+
+    .intro .links-row a:first-child {
+      margin-left: 0;
+    }
+
+    .intro .refs {
+      color: #555;
+    }
+
+    /* Sections below */
+    section {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+    }
+
+    h2 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 21px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 8px;
+      margin-top: 0;
+    }
+
+    h3 {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 19px;
+      font-weight: 600;
+      color: #1a4f8b;
+      margin-top: 36px;
+    }
+
+    .paper {
+      margin-bottom: 28px;
+    }
+
+    .paper .paper-title {
+      font-family: "Source Serif 4", Georgia, serif;
+      font-size: 15px;
+      font-weight: 400;
+      margin: 0;
+    }
+
+    .jmp-label {
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .paper .authors {
+      color: #555;
+      margin: 4px 0;
+    }
+
+    /* Abstract and Paper buttons */
+    .buttons {
+      margin-top: 8px;
+    }
+
+    .buttons button,
+    .buttons a {
+      font-family: inherit;
+      font-size: 12px;
+      padding: 4px 14px;
+      margin-right: 8px;
+      border: 1px solid #1a4f8b;
+      border-radius: 4px;
+      background: #fff;
+      color: #1a4f8b;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .buttons button:hover,
+    .buttons a:hover {
+      background: #1a4f8b;
+      color: #fff;
+    }
+
+    .abstract {
+      margin-top: 12px;
+      padding: 14px 18px;
+      background: #f5f7fa;
+      border-left: 3px solid #1a4f8b;
+      font-size: 13px;
+    }
+
+    footer {
+      text-align: center;
+      color: #999;
+      font-size: 12px;
+      padding: 40px 0;
+    }
+
+    /* Phone screens: put photo above the bio */
+    @media (max-width: 700px) {
+      .intro {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+      }
+
+      .intro img {
+        width: 175px;
+        height: auto;
+      }
+
+      nav .links a {
+        margin-left: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="name" href="#">Yixin Yang</a>
+    <div class="links">
+      <a href="#research">Research</a>
+      <a href="#teaching">Teaching</a>
+      <a href="YixinYang_CV.pdf">CV</a>
+    </div>
+  </nav>
+
+  <!-- First screen -->
+  <div class="intro">
+    <img src="photo1.jpg" alt="Photo of Yixin Yang">
+    <div>
+      <h1>About</h1>
+      <p>
+        Welcome! I am a PhD candidate in the Department of Agricultural and Resource Economics at the University of Maryland. I am on the 2026-2027 job market.
+      </p>
+      <p>
+        My research lies at the intersection of environmental economics and empirical industrial organization.
+        My job market paper examines how market power and policy design shape firms' investment in cleaner
+        technologies. I also study how people respond to environmental changes and their welfare effects, with a
+        focus on risk preferences and spatial mobility.
+      </p>
+      <p>
+        Research Interests: Environmental and Resource Economics, Empirical Industrial Organization, Applied Microeconomics
+      </p>
+      <p>Email: <a href="mailto:yxyang@umd.edu">yxyang@umd.edu</a></p>
+      <p class="links-row">
+        <a href="YixinYang_CV.pdf">CV</a> |
+        <a href="#research">Job Market Paper</a>
+      </p>
+      <p class="refs">
+        References:
+        <a href="mailto:linn@umd.edu">Joshua Linn</a> |
+        <a href="mailto:jholzer@umd.edu">Jorge Holzer</a> |
+        <a href="mailto:ebattist@umd.edu">Erich Battistin</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Research -->
+  <section id="research">
+    <h2>Research</h2>
+
+    <h3>Working Papers</h3>
+    <div class="paper">
+      <p class="paper-title">Does Greener Demand Induce Cleaner Production? Green Procurement Competition and Fuel Switching in the U.S. Cement Industry - <span class="jmp-label">Job Market Paper</span></p>
+      <p class="authors">Draft available upon request</p>
+      <div class="buttons">
+        <button onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract" hidden>
+        As carbon pricing faces political barriers, governments and large private buyers increasingly turn to green procurement policies, buying only from low-carbon suppliers to encourage clean production. This paper studies how Buy Clean initiatives reshape competition and clean investment in the U.S. cement industry. I develop a two-stage structural model in which plants choose whether to switch from coal to natural gas and then compete in procurement auctions. Counterfactual simulations show that Buy Clean induces 10 percent of plants to switch but exacerbates market distortions. Restricting public purchases to low-carbon suppliers weakens competition, increasing their markups on green sales by 12 percent. Shifting demand toward clean plants pushes their output closer to productive capacity, raising their marginal costs and increasing their bids to all buyers. Dirty plants’ markups also rise as they face less competition from clean rivals. A border-adjusted carbon tax that induces the same switching rate cuts more emissions at a lower welfare cost per ton of CO2 avoided.
+      </div>
+    </div>
+
+    <div class="paper">
+      <p class="paper-title">Chasing the Tail: Small-Probability Overweighting in Recreational Fishing</p>
+      <p class="authors">with Jorge Holzer, Leif Anderson, James Hilger, and Sabrina Lovell</p>
+      <div class="buttons">
+        <button onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract" hidden>
+        Natural resource management is inherently shaped by uncertainty, yet most policy evaluation assumes linear preferences and objective probabilities. We examine how risk preferences and probability weighting shape resource demand and welfare measurement in recreational fisheries, a setting where anglers must commit to a trip without knowing their realized catch. Using discrete choice experiments from the 2018 U.S. West Coast Sport Fishing Surveys, we estimate angler preferences for six species across three fisheries under both Expected Utility and Rank-Dependent Utility frameworks. Combining a CARA utility function with probability weighting, we find that anglers are risk-averse toward catch variability and systematically overweight low-probability, high-reward outcomes, consistent with an inverse S-shaped weighting function. These distortions are stronger among experienced and specialized anglers. Incorporating these preferences into a bioeconomic model, we show that linear-utility models produce biased estimates of effort responses and welfare effects when the upper tail of the catch distribution changes, whether through regulations such as bag limits or through changes in fish stocks.
+      </div>
+    </div>
+
+    <div class="paper">
+      <p class="paper-title">When Do Incentives Bind? Task-Level Evidence from Pay-for-Performance using a Randomized Controlled Trial</p>
+      <p class="authors">with Ellen Green, Dan Silverman, Yue Dong, and Elizabeth Reifsnider</p>
+      <div class="buttons">
+        <button onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract" hidden>
+        Organizations designing performance-pay systems must choose both reward size and which tasks to target. A threshold model predicts that incentives will have their largest effects on tasks with intermediate untreated completion, where more decisions are close to indifference. In a randomized experiment, clinicians treated standardized patients under contracts varying reporting and per-task bonuses. Consistent with the model, effects were largest at intermediate control-group completion and smaller at the extremes. Reporting alone raised completion by 8.2 percentage points; a high bonus produced a smaller additional gain, while a low bonus did not. This offers a practical criterion for task targeting.
+      </div>
+    </div>
+
+    <div class="paper">
+      <p class="paper-title">Allocation of Public Procurement Contracts and Political Connection</p>
+      <div class="buttons">
+        <button onclick="toggleAbstract(this)">Abstract</button>
+      </div>
+      <div class="abstract" hidden>
+        This paper investigates how political connections affect the allocation of government procurement contracts, exploiting China’s anti-corruption campaign as a quasi-experiment. Using an original dataset scraped from procurement contract records and a difference-in-differences design, I find a 39% reduction in the value of procurement contracts awarded to politically connected firms after the campaign. To shed light on two potential mechanisms, reduced corruption and the loss of connections, the heterogeneity analysis shows that the effect is more pronounced for firms connected to local government officials and in regions with higher corruption levels. Finally, I estimate firm-level total factor productivity and find that the anti-corruption campaign improves the allocative efficiency of procurement.
+      </div>
+    </div>
+
+    <h3>Work in Progress</h3>
+    <div class="paper">
+      <p class="paper-title">Environmental Shocks and Recreational Demand: Welfare Evidence from Smartphone Data</p>
+      <p class="authors">with Geret DePiper and Jorge Holzer</p>
+    </div>
+    <div class="paper">
+      <p class="paper-title">Spatial Mobility, Informational Interventions, and Resource Conservation</p>
+      <p class="authors">with Geret DePiper and Jorge Holzer</p>
+    </div>
+    <div class="paper">
+      <p class="paper-title">Remote Work, Travel Behavior, and Public Transit Adaptations</p>
+      <p class="authors">with Mengjia Hu</p>
+    </div>
+  </section>
+
+  <!-- Teaching -->
+  <section id="teaching">
+    <h2>Teaching</h2>
+    <div class="paper">
+      <p class="paper-title">AREC 610: Microeconomic Applications in Agricultural and Resource Markets (PhD core)</p>
+      <p class="authors">Teaching Assistant for Dr. Jorge Holzer, University of Maryland, Spring 2023</p>
+    </div>
+    <div class="paper">
+      <p class="paper-title">AREC 620: Optimization in Agricultural and Resource Economics (PhD core)</p>
+      <p class="authors">Teaching Assistant for Dr. Lars Olson, University of Maryland, Fall 2022</p>
+    </div>
+  </section>
+
+  <footer>© 2026 Yixin Yang</footer>
+
+  <script>
+    // Show or hide the abstract under the clicked button
+    function toggleAbstract(button) {
+      var abstract = button.parentElement.nextElementSibling;
+      abstract.hidden = !abstract.hidden;
+    }
+  </script>
+
+</body>
+</html>
